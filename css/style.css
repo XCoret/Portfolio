@@ -1,0 +1,85 @@
+/* ---- reset ---- */
+html{
+  box-sizing:border-box;
+}
+*{
+  box-sizing:inherit;
+  font-family:Roboto;
+}
+body{
+  margin:0px;
+  padding:0px;
+}
+ul{
+  list-style:none;
+  padding:0px;
+}
+a{
+  color:#008833;
+  text-decoration:none;
+  font-weight:bold;
+}
+img{
+  max-width:100%;
+}
+/* ---- ---- */ 
+/* ---- navbar ----*/
+nav{
+  position:fixed;
+  background-color:#fff;
+  width:100%;
+  top:0;
+  border-bottom:solid 1px #008833;
+}
+nav>ul{
+  
+  display: flex;
+  justify-content:space-between;
+  padding:0px 10%;
+  margin:0px;
+  line-height:50px;
+  height:50px;
+  
+  
+}
+nav>ul ul{
+  display:none;
+  position:absolute;
+  background:#fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top:2px; 
+}
+nav>ul li{
+  padding:0px 5%;
+}
+
+nav>ul li:hover{
+  background:#008833;
+  color:#ccc;
+}
+nav ul li:hover ul.nav-content{
+  
+  display:block;
+}
+nav ul li ul li:hover{
+  background:#ccc;
+}
+nav ul li a, nav ul li ul li a{
+  color:#000;
+  text-transform:uppercase;
+  font-weight:600;
+}
+/* ---- ---- */
+/* ---- main ----*/
+main{max-width:100%;}
+/* ---- ---- */
+/* ---- sidebar ----*/
+#sidebar{
+  margin-top:52px;
+  width:20%;
+  float:left;
+  
+  background-color:#008833;
+}
