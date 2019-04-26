@@ -10,10 +10,20 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
   font-family: 'Open Sans';
   color:var(--text-color);
+  
+}
+*::-moz-selection {
+  background-color: var(--accent-color)  ;
+  color:var(--background-color);
+}
+*::selection { 
+background-color: var(--accent-color)  ;
+  color:var(--background-color);
 }
 body {
   margin: 0px;
@@ -88,6 +98,7 @@ main section{
 }
 
 #home img{
+  margin-top:25px;
   max-width:50%;
   width:25%;
   background: linear-gradient(#00cc66, #93F9B9) repeat scroll 0% 0%;
