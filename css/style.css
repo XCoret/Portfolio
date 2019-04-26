@@ -3,7 +3,7 @@
   --text-color: #000000;
   --accent-color:#008833;
   --background-color:#ffffff;
-  --cover-color:rgba(255,255,255,0.5);
+  --cover-color:rgba(255,255,255,0.75);
 }
 
 /* ---- reset ---- */
@@ -84,8 +84,8 @@ main section{
   top:0px;
   height:200px;  
   width:350px;
-  margin:5%;
-  box-shadow:0px 0px 5px 2px var(--text-color);
+  margin:5% auto;
+  box-shadow:0px 0px 5px 2px #000;
   
 }
 #portfolio ul li figure{
@@ -98,26 +98,45 @@ main section{
   transition: all 0.3s;
   position:relative;
   width:100%;  
+  max-width: initial;
 }
 #portfolio ul li div{
   position: absolute;
   overflow: hidden;
   width:350px;
   height:30px;
-  bottom:0px;
-  background-color: var(--cover-color);
-  padding:5px;
+  bottom:-1px;
+  background-color: var(--cover-color);  
   transition: all 0.3s;
 }
 #portfolio ul li:hover > div{
-  overflow:hidden;
-  height:200px;
+  overflow:hidden !important;
+  height:201px;
 }
 #portfolio ul li:hover >figure img{
   transform: scale(1.1);
 }
 #portfolio ul li div h4{
+  transition: all 0.3s;
+  background-color:var(--cover-color);
   margin:0px;
-  padding:0px;
+  padding:5px 5px 4px 5px;
+  
+
+}
+#portfolio ul li:hover > div h4{
+  color:var(--accent-color);
+  background-color:var(--background-color);
+  border-bottom:solid 1px var(--accent-color);
+}
+#portfolio ul li div h4 img{
+  max-width: 25px;
+  float: right;
+  position:relative;
+  bottom:2px;
+}
+#portfolio ul li div p{
+  text-align:center;
+  padding:5px;
 }
 /* --- img --- */
