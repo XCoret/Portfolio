@@ -59,7 +59,9 @@ nav ul li{
 nav ul li a{
   color:var(--text-color);
   text-transform:uppercase;
-  font-weight:bold;
+  font-weight:bold;  
+  display:block;
+  width:100%;
 }
 nav ul li:hover,nav ul li:active{
   
@@ -99,8 +101,9 @@ main section{
   background: linear-gradient(to bottom right,  #008833, #93F9B9, #00CC66, #1D976C,#00CC66, #93F9B9, #008833); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: 'Rubik';
 }
-#home h1:hover{
+#home h1:hover a{
   text-decoration: none !important; 
 }
 /* ---- about ---- */
@@ -187,6 +190,13 @@ footer section#media ul{
   justify-content:space-between;
   padding:20px 15%;
   text-align: center;
+}
+footer section#media ul li a img{
+  max-width: 32px;
+  width:32px;
+}
+footer section#media ul li a:hover{
+  text-decoration: none;
 }
 footer section,footer section ul li a,footer section  ul li a i{
   color:var(--background-color);
