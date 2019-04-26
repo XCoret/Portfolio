@@ -2,6 +2,7 @@
 :root {
   --text-color: #000000;
   --accent-color:#008833;
+  --background-color:#ffffff;
 }
 
 /* ---- reset ---- */
@@ -18,10 +19,11 @@ body {
   padding: 0px;
 }
 a{
+  color:var(--accent-color);
   text-decoration:none;
 }
 a:hover{
-  color:var(--accent-color);
+  text-decoration:underline;
 }
 ul{
   list-style:none;
@@ -38,7 +40,7 @@ nav{
   top:0px;
   width:100%;
   border-bottom:solid 1px var(--accent-color);
-  
+  background-color:var(--background-color);
 }
 nav ul{
   display:flex;
@@ -46,13 +48,26 @@ nav ul{
   padding:0 20%;
 }
 nav ul li a{
+  color:var(--text-color);
   text-transform:uppercase;
   font-weight:bold;
+}
+nav ul li a:hover{
+  color:var(--accent-color);
 }
 /* ---- ---- */
 /* ---- main ---- */
 main{
   
+}
+main section{
   width:70%;
   margin:60px auto;
+}
+#home{
+  text-align:center;
+}
+#home img{
+  max-width:50%;
+  width:25%;
 }
