@@ -187,8 +187,14 @@ main section{
   
 
 }
-#portfolio ul li:hover > div h4{
+#portfolio ul li div h4 a{
+  color:var(--text-color);
+}
+#portfolio ul li div:hover > h4 a{
   color:var(--accent-color);
+}
+#portfolio ul li:hover > div h4 {
+  
   background-color:var(--background-color);
   border-bottom:solid 1px var(--accent-color);
 }
