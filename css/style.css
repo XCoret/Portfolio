@@ -22,7 +22,7 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Roboto','Open Sans';
   color:var(--text-color);
   
 }
@@ -117,11 +117,13 @@ main section{
   font-size: 350%;
   padding:0px;
   margin:0px auto;
-  font-weight:bold;
+  font-weight:700;
   background: linear-gradient(to bottom right,  #008833, #93F9B9, #00CC66, #1D976C,#00CC66, #93F9B9, #008833); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Rubik';
+}
+#home h1 a{
+   font-family: 'Rubik' !important;
 }
 #home h1:hover a{
   text-decoration: none !important; 
