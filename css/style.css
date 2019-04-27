@@ -235,3 +235,37 @@ footer section#copy {
   
 }
 /* --- --- */
+@media screen and (max-width:980px){
+  h1,h2{
+    font-size:200%;
+  }
+  p{
+    font-size:150%;
+    text-align:center;
+  }
+
+  nav ul, nav ul li, nav ul li a{
+    height:75px;
+    line-height:75px;
+    
+  }
+  #home{
+    margin-top:75px;
+  }
+  section{
+    width:90% !important;
+  }
+  section img{
+    margin:0px auto;
+  }
+  section h2{
+    text-align:center;
+  }
+  #about img{
+    min-width:35%;
+  }
+  #portfolio ul {
+
+    display:block;
+    }
+}
