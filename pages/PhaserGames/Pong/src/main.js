@@ -15,13 +15,13 @@ window.onload = function(){
         physics:{
             default:"arcade",
             arcade:{
-                debug: true,
+                debug: false,
                 gravity:{
                     y:0
                 },
             }
         },
-        scene:[Boot,Splash,Menu,Game]
+        scene:[Boot,Splash,Game]
     }
     game = new Phaser.Game(gameConfig);    
 }
