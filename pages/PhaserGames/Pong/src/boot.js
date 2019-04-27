@@ -3,8 +3,9 @@ class Boot extends Phaser.Scene{
 		super("Boot");
 	}
 	preload(){
-		this.load.image("ball","../assets/img/pongBall.png");
-		this.load.image("paddle","../assets/img/pongPaddle.png");
+		this.load.image("ball","../assets/img/pong/ball.png");
+		this.load.image("paddle","../assets/img/pong/paddle.png");
+		this.load.image("field","../assets/img/pong/field.png");
 		
 		this.load.spritesheet('button', 
         '../assets/img/button.png',
