@@ -8,6 +8,11 @@ main{
 	display:flex;
 	justify-content:center;
 }
+body{
+	background-image: url(https://phaser.io/images/bg-body6.jpg) ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
 #game{
-	margin-top:50px;
+	margin-top:20px;
 }

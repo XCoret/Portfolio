@@ -183,12 +183,12 @@ main section{
   transition: all 0.3s;
   background-color:var(--cover-color);
   margin:0px;
-  padding:5px 5px 4px 5px;
-  
-
+  padding:5px 5px 5px 5px;  
+  border-bottom:solid 1px var(--cover-color);
 }
 #portfolio ul li div h4 a{
   color:var(--text-color);
+  
 }
 #portfolio ul li div:hover > h4 a{
   color:var(--accent-color);
@@ -202,7 +202,7 @@ main section{
   max-width: 25px;
   float: right;
   position:relative;
-  bottom:2px;
+  bottom:3px;
 }
 #portfolio ul li div p{
   text-align:center;
