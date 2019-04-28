@@ -10,7 +10,7 @@ class Splash extends Phaser.Scene{
     update(){
         if (title.y==gameOptions.wcY){
             console.log("Splash done!");
-            this.scene.start("Menu");
+            this.scene.start("Game");
         }else{
             title.y-=2;
         }
