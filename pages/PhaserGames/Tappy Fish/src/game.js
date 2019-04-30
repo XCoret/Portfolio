@@ -28,6 +28,7 @@ class Game extends Phaser.Scene{
 
 		this.physics.add.collider(fish,ground,this.fishCollidesGround,null,this);
 		this.physics.add.overlap(fish,pipes,this.fishCollidesPipe,null,this);
+		this.physics.add.overlap(fish,gaps,this.fishGetsPoints,null,this);
 					
 		
 		this.input.on('pointerdown', function (pointer){
@@ -56,6 +57,10 @@ class Game extends Phaser.Scene{
 			fish.angle++;
 		}
 		
+	}
+	fishGetsPoints(){
+		score++;
+		scoreBoard.setText(score);
 	}
 	addPipes(){
 		var y = Phaser.Math.Between(120, gameOptions.appHeight-120);
@@ -120,15 +125,7 @@ class Game extends Phaser.Scene{
 			timedPipes.destroy();
 			pipes.setVelocityX(0,0);
 			gaps.setVelocityX(0,0);
-			groundMovement=0;
-			//this.time.addEvent({ delay: 2000, callback: this.resetPosition, callbackScope: this, loop: false });
-		
-		}
-		
-
-		
-		
-		
-		
+			groundMovement=0;		
+		}		
 	}
 }
