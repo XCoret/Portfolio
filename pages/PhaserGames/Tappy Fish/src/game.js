@@ -28,7 +28,7 @@ class Game extends Phaser.Scene{
 
 		this.physics.add.collider(fish,ground,this.fishCollidesGround,null,this);
 		this.physics.add.overlap(fish,pipes,this.fishCollidesPipe,null,this);
-		this.physics.add.overlap(fish,gaps,this.fishGetsPoints,null,this);
+		this.physics.add.collider(fish,gaps,this.fishGetsPoints,null,this);
 					
 		
 		this.input.on('pointerdown', function (pointer){
@@ -58,7 +58,8 @@ class Game extends Phaser.Scene{
 		}
 		
 	}
-	fishGetsPoints(){
+	fishGetsPoints(_fish,_gap){
+		_gap.destroy();
 		score++;
 		scoreBoard.setText(score);
 	}
