@@ -1,20 +1,48 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Tappy Fish in PHAS3R</title>
-		<link rel="stylesheet" type="text/css" href="../css/gameStyle.css">
-</head>
-<body>
-<main>
-<div id="game"></div>
-</main>
-        <!--<script type="text/javascript" src="../phaser.min.js"></script>-->
-        <script type="text/javascript" src="../phaser.js"></script>
-		
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <link rel="icon" href="../../../img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <!-- Rubik font from Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet"> 
+    <link href="../../../css/fontawesome/css/all.css" rel="stylesheet">
+    <title>XCoretDev</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://xcoret.github.io/XCoretDev/#home">Home</a></li>
+          <li><a href="https://xcoret.github.io/XCoretDev/#about">About</a></li>
+          <li><a href="https://xcoret.github.io/XCoretDev/#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+     <section id="portfolio">        
+        <h2>Tappy Fish!</h2>
+        <div id="game"></div>
+        <p>Powered by <a href="https://phaser.io"><img src="../../../img/phas3r.png" alt="Phaser 3" title="Phaser 3"></a></p>
+      </section>
+    </main>
+    <footer>
+      <section id="media">
+        <ul>
+          <li><a href="https://github.com/XCoret"><img src="../../../img/githubico.png"><br>GitHub</a></li>
+          <li><a href="https://instagram.com/xcoretm95"><img src="../../../img/instagramico.png"><br>Instagram</a></li>
+          <li><a href="https://twitter.com/XCoretM"><img src="../../../img/twitterico.png"><br>Twitter</a></li>
+        </ul>
+      </section>
+      <section id="copy">
+        &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script>, XCoretM
+      </section>
+    </footer>
+        <script type="text/javascript" src="../phaser.js"></script>    
         <script type="text/javascript" src="src/boot.js"></script>
         <script type="text/javascript" src="src/splash.js"></script>
         <script type="text/javascript" src="src/game.js"></script>
         <script type="text/javascript" src="src/main.js"></script>
-</body>
+  </body>
 </html>
