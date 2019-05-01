@@ -12,9 +12,10 @@ class Game extends Phaser.Scene{
 		this.physics.world.setBoundsCollision(true, false, false, false);
 		this.add.image(0,0,'background').setOrigin(0);
 		score=0;
-		fish =this.physics.add.sprite(gameOptions.wcX-50,gameOptions.wcY,'fish').setOrigin(0.5).setScale(0.5).setData('swimming',false);
+		fish =this.physics.add.sprite(gameOptions.wcX-50,gameOptions.wcY,'fish').setOrigin(0.5).setScale(0.5).setData('swimming',false).setImmovable(true);
 		fish.body.gravity.y=0;
 		ground = this.add.tileSprite(0,gameOptions.appHeight-52,gameOptions.appWidth,104,'ground').setOrigin(0);
+
 		this.physics.add.existing(ground, true);
 		
 		this.anims.create({
