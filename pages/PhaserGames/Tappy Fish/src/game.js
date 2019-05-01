@@ -46,7 +46,7 @@ class Game extends Phaser.Scene{
 		scoreBoard = this.add.bitmapText(gameOptions.wcX, 30, 'tappyFish', '0').setScale(0.5).setOrigin(0.5);	
 	}
 	update(){
-		fish.x = gameOptions.wcX-50;
+		
 		if(fish.getData('swimming')){			
 			ground.tilePositionX+=groundMovement;
 		}
@@ -64,6 +64,7 @@ class Game extends Phaser.Scene{
 		_gap.destroy();
 		score++;
 		scoreBoard.setText(score);
+		fish.x = gameOptions.wcX-50;
 	}
 	addPipes(){
 		var y = Phaser.Math.Between(120, gameOptions.appHeight-120);
@@ -117,7 +118,8 @@ class Game extends Phaser.Scene{
 		fish.setPosition(gameOptions.wcX-50,gameOptions.wcY);
 		fish.setRotation(0);
 		fish.body.gravity.y=0;
-		score=0;
+		score=0;		
+		scoreBoard.setText(score);
 	}
 	die(){
 		if(fish.getData('swimming')){			
