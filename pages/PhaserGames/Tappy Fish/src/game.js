@@ -12,7 +12,7 @@ class Game extends Phaser.Scene{
 		this.physics.world.setBoundsCollision(true, false, false, false);
 		this.add.image(0,0,'background').setOrigin(0);
 		score=0;
-		fish =this.physics.add.sprite(gameOptions.wcX-50,gameOptions.wcY,'fish').setOrigin(0.5).setScale(0.5).setData('swimming',false).setImmovable(true);
+		fish =this.physics.add.sprite(gameOptions.wcX-50,gameOptions.wcY,'fish').setOrigin(0.5).setScale(0.5).setData('swimming',false).setImmovable(false);
 		fish.body.gravity.y=0;
 		ground = this.add.tileSprite(0,gameOptions.appHeight-52,gameOptions.appWidth,104,'ground').setOrigin(0);
 
@@ -46,6 +46,7 @@ class Game extends Phaser.Scene{
 		scoreBoard = this.add.bitmapText(gameOptions.wcX, 30, 'tappyFish', '0').setScale(0.5).setOrigin(0.5);	
 	}
 	update(){
+		//fish.x = gameOptions.wcX-50;
 		if(fish.getData('swimming')){			
 			ground.tilePositionX+=groundMovement;
 		}
