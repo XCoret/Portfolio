@@ -47,6 +47,7 @@ class Game extends Phaser.Scene{
 	}
 	update(){
 		
+		fish.x = gameOptions.wcX-50;
 		if(fish.getData('swimming')){			
 			ground.tilePositionX+=groundMovement;
 		}
@@ -64,7 +65,6 @@ class Game extends Phaser.Scene{
 		_gap.destroy();
 		score++;
 		scoreBoard.setText(score);
-		fish.x = gameOptions.wcX-50;
 	}
 	addPipes(){
 		var y = Phaser.Math.Between(120, gameOptions.appHeight-120);
@@ -102,7 +102,9 @@ class Game extends Phaser.Scene{
 	}
 	fishCollidesPipe(fish,pipe){
 		pipe.body.velocity.y=0;
-		this.die();
+		if(fish.getData('swimming')){
+			this.die();
+		}
 		//timedDeath = this.time.delayedCall(5000, this.die, [], this);
 		
 	}
@@ -122,12 +124,12 @@ class Game extends Phaser.Scene{
 		scoreBoard.setText(score);
 	}
 	die(){
-		if(fish.getData('swimming')){			
+		if(fish.getData('swimming')){	
+			this.cameras.main.flash();			
 			fish.setData('swimming',false);
 			fish.setVelocityX(0);
 			fish.setVelocityY(0);
-			fish.body.gravity.y=150;
-			this.cameras.main.flash();			
+			fish.body.gravity.y=150;		
 			timedPipes.destroy();
 			pipes.setVelocityX(0,0);
 			gaps.setVelocityX(0,0);
