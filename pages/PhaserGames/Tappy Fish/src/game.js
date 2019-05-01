@@ -44,7 +44,7 @@ class Game extends Phaser.Scene{
 			}
 		}, this);	
 		scoreBoard = this.add.bitmapText(gameOptions.wcX, 30, 'tappyFish', '0').setScale(0.5).setOrigin(0.5);	
-		scoreBoard.z=1;
+		scoreBoard.depth = 1;
 	}
 	update(){
 		
