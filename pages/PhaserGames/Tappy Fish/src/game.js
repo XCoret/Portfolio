@@ -46,6 +46,7 @@ class Game extends Phaser.Scene{
 		scoreBoard = this.add.bitmapText(gameOptions.wcX, 30, 'tappyFish', '0').setScale(0.5).setOrigin(0.5);	
 	}
 	update(){
+		fish.x = gameOptions.wcX-50;
 		if(fish.getData('swimming')){			
 			ground.tilePositionX+=groundMovement;
 		}
