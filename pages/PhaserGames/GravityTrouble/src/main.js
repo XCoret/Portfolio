@@ -12,10 +12,11 @@ var gameOptions = {
 window.onload = function() {
 
     var gameConfig = {
-        type: Phaser.CANVAS,
+        type: Phaser.AUTO,
         width: 640,
-        parent:"game",
         height: 360,
+        parent:"game"
+        backgroundColor:0x090a0f,
         physics: {
             default: "arcade",
             arcade: {
