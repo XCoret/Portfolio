@@ -160,6 +160,7 @@ class Game extends Phaser.Scene{
         powerup.x=ship.x;
         powerup.y=-20;
         powerup.body.velocity.y = gameOptions.powerupY;  
+        powerup.body.velocity.x = 0; 
         console.log(gameOptions.shipSpeedX/3);
     }
     resetPowerupPosition(){
