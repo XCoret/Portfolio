@@ -45,6 +45,25 @@ a{
 a:hover{
   text-decoration:underline;
 }
+button{
+  border: solid 3px var(--accent-color) !important;
+  background-color:var(--accent-color) !important;
+  color:var(--background-color);
+  font-size: 100%;
+  padding:5px 10px !important;
+  cursor: pointer !important;
+}
+button:hover{
+  background-color:var(--background-color) !important;
+  color:var(--accent-color);
+  border-color:var(--background-color) !important;
+}
+button.active{
+  background-color:var(--background-color) !important;
+  color:var(--accent-color);
+  border-color:var(--accent-color) !important;
+}
+
 ul{
   list-style:none;
   padding:0px;
