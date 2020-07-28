@@ -8,7 +8,16 @@
     <!-- Rubik font from Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet"> 
     <link href="css/fontawesome/css/all.css" rel="stylesheet">
-
+    <script>
+        function changeTabs(language) {
+            var i;
+            var l = document.getElementsByClassName("language");
+            for (i = 0; i < l.length; i++) {
+                l[i].style.display = "none";
+            }
+            document.getElementById(language).style.display = "block";
+        }
+    </script>
     <title>XCoretDev</title>
   </head>
   <body>
@@ -34,11 +43,15 @@
 
         <div id="catalan" class="language">
             <h2>Currículum Vitae en català</h2>
-            <iframe src="https://xcoret.github.io/XCoretDev/pages/Curriculum/assets/CV_Xavi_Coret_ca.pdf" width="100%" >
+            <iframe src="https://xcoret.github.io/XCoretDev/pages/Curriculum/assets/CV_Xavi_Coret_ca.pdf#view=fit"
+                title="Curriculum in Catalan" width="100%" height="700px">
+            </iframe>
         </div>
         <div id="spanish" class="language" style="display:none">
             <h2>Currículum Vitae en castellano</h2>
-            <iframe src="https://xcoret.github.io/XCoretDev/pages/Curriculum/assets/CV_Xavi_Coret_es.pdf" width="100%">
+            <iframe src="https://xcoret.github.io/XCoretDev/pages/Curriculum/assets/CV_Xavi_Coret_es.pdf#view=fit"
+                title="Curriculum in Spanish" width="100%" height="700px">
+            </iframe>
         </div>
         <div id="english" class="language" style="display:none">
             <h2>Currículum Vitae in english</h2>
@@ -60,15 +73,6 @@
         &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script>, XCoretM
       </section>
     </footer>
-    <script>
-        function changeTabs(language){
-            var i;
-            var l = document.getElementsByClassName("language");
-            for(i =0;i<l.length;i++){
-                l[i].style.display="none";
-            }
-            document.getElementById(language).style.display="block";
-        }
-    </script>
+
   </body>
 </html>
