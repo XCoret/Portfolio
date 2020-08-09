@@ -2,6 +2,7 @@
 :root {
   --text-color: #333;
   --accent-color:#008833;
+  --accent-colo-2:#44DC50;
   --background-color:#ffffff;
   --cover-color:rgba(255,255,255,0.75);
 }
