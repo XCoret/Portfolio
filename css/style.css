@@ -22,10 +22,19 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-  font-family: 'Open Sans';
-  color:var(--text-color);
+  box-sizing: inherit; 
+}
+h1,h2,h3,h4,p,a,#copy{
+  font-family: 'Open Sans';  
+  color:var(--text-color); 
+}
+#copy{
+  color: var(--background-color) !important;
+}
+span.fa{
   
+  font-size: 3em; 
+  color: var(--background-color) !important;
 }
 *::-moz-selection {
   background-color: var(--accent-color)  ;

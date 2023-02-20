@@ -5,12 +5,17 @@
     <link rel="stylesheet" type="text/css" href="https://xcoret.github.io/Portfolio/css/style.css">
     
     <link rel="icon" href="https://xcoret.github.io/Portfolio/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    
     <!-- Rubik font from Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet"> 
-    <link href="https://xcoret.github.io/Portfolio/css/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c52d822e0.js" crossorigin="anonymous"></script>
+  <!-- highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+  <!-- marked.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        function changeTabs(event,language) {
+          function changeTabs(event,language) {
             var i, tabContent,tabLinks;
             tabContent = document.getElementsByClassName("tabContent");
             for (i = 0; i < tabContent.length; i++) {
@@ -33,38 +38,26 @@
           <li><a href="https://xcoret.github.io/Portfolio/#home">Home</a></li>
           <li><a href="https://xcoret.github.io/Portfolio/#about">About</a></li>
           <li><a href="https://xcoret.github.io/Portfolio/#portfolio">Portfolio</a></li>
-          <li><a href="#">Curriculum</a></li>
+          <li><a href="#">Traffic sign recognition</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="curriculum">
-        <h1>Curriculum Vitae.</h1>
-        <p>Here you can see and download my curriculum</p>
-        <div>
-            <button onClick="changeTabs(event,'catalan')" class="tabLink active">Catalan</button>
-            <button onClick="changeTabs(event,'spanish')" class="tabLink">Spanish</button>
-            <button onClick="changeTabs(event,'english')" class="tabLink">English</button>
-        </div>
+        <div id="mdContent">
 
-        <div id="catalan" class="tabContent">
-            <h2>Currículum Vitae en català </h2>
-            <iframe src="https://xcoret.github.io/Portfolio/pages/Curriculum/assets/CV_Xavi_Coret_ca.pdf#view=fit"
-                title="Curriculum in Catalan" width="100%" height="700px">
-            </iframe>
         </div>
-        <div id="spanish" class="tabContent" style="display:none">
-            <h2>Currículum Vitae en castellano</h2>
-            <iframe src="https://xcoret.github.io/Portfolio/pages/Curriculum/assets/CV_Xavi_Coret_es.pdf#view=fit"
-                title="Curriculum in Spanish" width="100%" height="700px">
-            </iframe>
-        </div>
-        <div id="english" class="tabContent" style="display:none">
-            <h2>Curriculum Vitae in english</h2>
-            <iframe src="https://xcoret.github.io/Portfolio/pages/Curriculum/assets/CV_Xavi_Coret_en.pdf#view=fit"
-                title="Curriculum in English" width="100%" height="700px">
-            </iframe>
-        </div>
+        <script>
+          const docs = "markdown_info.md"
+          async function run() {
+            let file = await fetch(docs)
+            let text = await file.text()
+            document.getElementById('mdContent').innerHTML =
+              marked.parse(text);
+            hljs.highlightAll();
+          }
+          run()
+        </script>
       </section>
      
      

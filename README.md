@@ -1,7 +1,7 @@
 # XCoretDev
 
 Hi everyone!
-* [XCoretDev](https://xcoret.github.io/XCoretDev/) - My main page and portfolio
+* [XCoretDev](https://xcoret.github.io/Portfolio/) - My main page and portfolio
 
 ## First of all
 
