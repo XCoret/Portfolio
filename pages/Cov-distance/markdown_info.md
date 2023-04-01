@@ -1,16 +1,16 @@
 # Cov-Distance
 
-[![An old rock in the desert](assets/cover.jpg "Social distancing image from Freepik")](https://www.freepik.es/vector-gratis/medida-proteccion-distanciamiento-social_7534262.htm#page=4&query=social%20distancing&position=27&from_view=search&track=ais)
+[![Social distancing image from Freepik](assets/cover.jpg "Social distancing image from Freepik")](https://www.freepik.es/vector-gratis/medida-proteccion-distanciamiento-social_7534262.htm#page=4&query=social%20distancing&position=27&from_view=search&track=ais)
 
 An application to measure and control the distance between pedestrians.
 
 ## Technical specifications
-- Python
-- OpenCV
-- Flask
-- Google Cloud Vision  
-- Google Cloud Videointelligence
-- Google Cloud Storage
++ Python
++ OpenCV
++ Flask
++ Google Cloud Vision  
++ Google Cloud Videointelligence
++ Google Cloud Storage
 
 
 ## Motivation
