@@ -9,7 +9,9 @@ I'm excited to share my professional portfolio and curriculum with you. This web
 
 ## About me
 
-[![Xavi Coret Mayoral](img/profile.png "Xavi Coret Mayoral")](https://www.freepik.es/vector-gratis/medida-proteccion-distanciamiento-social_7534262.htm#page=4&query=social%20distancing&position=27&from_view=search&track=ais)
+
+<img src="img/profile.png" alt="Xavi Coret Mayoral" width="25%" height="25%">
+
 
 My name is Xavi Coret Mayoral and I am a computer engineer.
 I am passionate about programming and love spending hours in front of my computer, constantly improving my code and taking on new challenges. This is why I pursued a degree in Computer Engineering at the Autonomous University of Barcelona(UAB).
