@@ -1,9 +1,9 @@
 var game;
 var gameOptions={
-    appHeight:640,
-	appWidth:360,
-    wcX:180,
-    wcY:320
+    appHeight:512,
+	appWidth:288,
+    wcX:144,
+    wcY:256
 }
 window.onload = function(){
     var gameConfig = {
@@ -17,7 +17,7 @@ window.onload = function(){
             arcade:{
                 debug: false,
                 gravity:{
-                    y:0
+                    y:-400
                 },
             }
         },
