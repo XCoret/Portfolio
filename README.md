@@ -3,9 +3,7 @@
 #### _Efficient programming, effortless solutions._
 ___
 
-
-
-
+<img src="https://github.com/XCoret/portfolio/blob/7ecb5c5841b34b09790ad1c52158e66ccaed47f7/img/readme_cover.png" alt="Xavi Coret Mayoral" width="100%" style="box-shadow:0px 0px 5px 2px #00cc66">
 
 My name is **Xavi Coret Mayoral** and I am a computer engineer. I am passionate about programming and love spending hours in front of my computer, constantly improving my code and taking on new challenges. This is why I pursued a degree in **Computer Engineering** at the *Autonomous University of Barcelona (UAB)*. Currently, I am also pursuing a **Master's degree in Artificial Intelligence** at the *University of La Rioja (UNIR)*. I am excited to delve deeper into the fascinating field of AI and apply my skills and knowledge to innovative projects.
 
