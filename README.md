@@ -1,4 +1,4 @@
-# [***<span style="color:#00cc66">XCoretDev</span>*** ](https://xcoret.github.io/portfolio/) :link:
+# [***<span style="color:#00cc66">XCoretDev</span>*** :link:](https://xcoret.github.io/portfolio/) 
 
 #### _Efficient programming, effortless solutions._
 ___
