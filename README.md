@@ -10,16 +10,16 @@ My name is **Xavi Coret Mayoral** and I am a computer engineer. I am passionate 
 
 
 ## Skills
-![Python](https://img.shields.io/badge/Python-yellow?logo=Python) 
-![Java](https://img.shields.io/badge/Java-red?logo=Java&logoColor=ite&color=%23e01e23)
+![Python](https://img.shields.io/badge/Python-yellow?logo=Python&color=ffe05e) 
+![Java](https://img.shields.io/badge/Java-red?logo=Java&color=ea2d2e)
 
-![C](https://img.shields.io/badge/C-blue?logo=C)
-![C++](https://img.shields.io/badge/C%2B%2B-darkblue?logo=C%2B%2B)
-![C#](https://img.shields.io/badge/C%23-purple?logo=C%20Sharp)
+![C](https://img.shields.io/badge/C-blue?logo=C&color=138c94)
+![C++](https://img.shields.io/badge/C%2B%2B-darkblue?logo=C%2B%2B&color=821394)
+![C#](https://img.shields.io/badge/C%23-purple?logo=C%20Sharp&color=341394)
 
 ![HTML](https://img.shields.io/badge/HTML5-orange?logo=HTML5) 
 ![JavaScript](https://img.shields.io/badge/JavaScript-gray?logo=JavaScript)
-![PHP](https://img.shields.io/badge/PHP-purple?logo=PHP)
+![PHP](https://img.shields.io/badge/PHP-purple?logo=PHP&color=505e9c)
 ![JQuery](https://img.shields.io/badge/jQuery-blue?logo=jQuery)
 ![CSS](https://img.shields.io/badge/CSS3-lightblue?logo=CSS3) 
 
