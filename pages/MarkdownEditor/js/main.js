@@ -1,8 +1,23 @@
 function renderMD() {
+  // const textarea = document.getElementById("markdown-input");
+  // const outputDiv = document.getElementById("markdown-preview");
+  // const text = textarea.value;
+  // outputDiv.innerHTML = marked.parse(text);
+
   const textarea = document.getElementById("markdown-input");
   const outputDiv = document.getElementById("markdown-preview");
   const text = textarea.value;
-  outputDiv.innerHTML = marked.parse(text);
+
+  // Use marked to parse the Markdown
+  const parsedMarkdown = marked.parse(text);
+
+  // Use highlight.js to highlight code blocks within the parsed Markdown
+  outputDiv.innerHTML = parsedMarkdown;
+  // Highlight code blocks
+  document.querySelectorAll("pre code").forEach(block => {
+  hljs.highlightBlock(block);
+  });
+
 }
 function parseKeys(e) { 
   if (e.key === 'Tab') {
