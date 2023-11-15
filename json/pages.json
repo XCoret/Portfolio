@@ -160,7 +160,7 @@
                         "id": "email",
                         "title": "e-mail",
                         "icon": "fa-solid fa-envelope",
-                        "href":"mailto:xavicoretmayoral@gmail.com?subject=\"[Portfolio visitor]\""
+                        "href":"mailto:xavicoretmayoral@gmail.com?subject=[Portfolio visitor]"
                     },
                     {
                         "id": "github",
