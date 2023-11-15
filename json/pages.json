@@ -2,7 +2,7 @@
     "pages": {
         "home": {
             "id": "home",
-            "title": "Welcome to Xavi Coret Mayoral's Portfolio",
+            "title": "Welcome to <strong>Xavi Coret Mayoral's Portfolio</strong>",
             "description": "Efficient programming, effortless solutions.",
             "sections": [
                 {
