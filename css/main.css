@@ -1,0 +1,312 @@
+:root {
+  --text: #283D3B;
+  --accent-1: #008833;
+  --accent-2: #00AA40;
+  --accent-3: #009664;
+  --background: #ffffff;
+  --cover-color: rgba(255, 255, 255, 0.75);
+}
+
+*::-moz-selection {
+  background-color: var(--accent-1)  ;
+  color:var(--background);
+  text-shadow: none;
+}
+*::selection { 
+background-color: var(--accent-1)  ;
+  color:var(--background);
+  text-shadow: none;
+}
+/***********************************************************************************************/
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px auto;
+  background: var(--background-1);
+  font-family: 'Open Sans';
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto';
+}
+
+p b,
+p strong {
+  color: var(--accent-3);
+}
+p{
+  text-align: justify;
+}
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+section {
+  position: relative;
+  width: 75%;
+  margin: 20px auto;
+  padding: 35px;
+  border-bottom: solid 1px var(--accent-1);
+}
+
+#motto {
+  margin-top: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+#motto h1,
+#motto p {
+  display: block;
+  margin: 0px auto;
+  color: var(--text);
+  width: 50%;
+  text-align: center;
+}
+
+#motto p {
+  font-size: 110%;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/***********************************************************************************************/
+
+#header {
+  background-color: var(--background);
+  box-shadow: 0px 0px 10px 1px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 1px var(--accent-1);
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text);
+  font-weight: bold;
+  font-family: 'Roboto';
+  width: 25%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:hover,
+nav a:active {
+  color: var(--accent-1);
+  background: linear-gradient(0deg, var(--accent-1) 10%, rgba(0, 0, 0, 0) 10%);
+}
+
+/***********************************************************************************************/
+/* ---- portfolio ---- */
+#portfolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#portfolio ul li {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  margin: 5% auto;
+  box-shadow: 0px 0px 5px 2px #000;
+}
+
+#portfolio ul li figure {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#portfolio ul li figure img {
+  transition: all 0.7s;
+  position: relative;
+  width: 100%;
+  max-width: initial;
+  max-height: 200px !important;
+  overflow: hidden !important;
+}
+
+#portfolio ul li div {
+  position: absolute;
+  overflow: hidden;
+  width: 350px;
+  height: 30px;
+  bottom: -1px;
+  background-color: var(--cover-color);
+  transition: all 0.3s;
+}
+
+#portfolio ul li:hover>div {
+  overflow: hidden !important;
+  height: 201px;
+}
+
+#portfolio ul li:hover>figure img {
+  transform: scale(1.5);
+}
+
+#portfolio ul li div h4 {
+  transition: all 0.3s;
+  background-color: var(--cover-color);
+  margin: 0px;
+  padding: 5px 5px 5px 5px;
+  border-bottom: solid 1px var(--cover-color);
+}
+
+#portfolio ul li div h4 a {
+  color: var(--text-color);
+}
+
+#portfolio ul li div:hover>h4 a,
+#portfolio ul li div:hover>h4 a i {
+  color: var(--accent-1);
+}
+
+#portfolio ul li:hover>div h4 {
+  background-color: var(--background);
+  border-bottom: solid 1px var(--accent-1);
+}
+
+#portfolio ul li div h4 img {
+  max-width: 25px;
+  float: right;
+  position: relative;
+  bottom: 3px;
+}
+
+#portfolio ul li div p {
+  text-align: center;
+  padding: 0px 10px;
+  text-shadow: 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  font-size: 90%;
+  color:var(--text);
+}
+
+/* ---- ---- */
+button {
+  margin: 5px;
+  border: solid 3px var(--accent-1) !important;
+  background-color: var(--accent-1) !important;
+  color: var(--background);
+  font-size: 100%;
+  padding: 5px 10px !important;
+  cursor: pointer !important;
+}
+
+button:hover {
+  background-color: var(--background) !important;
+  color: var(--accent-1);
+  border-color: var(--background) !important;
+}
+
+button.active {
+  background-color: var(--background) !important;
+  color: var(--accent-1);
+  border-color: var(--accent-1) !important;
+}
+
+/***********************************************************************************************/
+#contact {
+  text-align: center;
+}
+
+#media {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 50px;
+}
+
+#media li {
+  text-align: center;
+}
+
+#media a {
+  text-decoration: none;
+}
+
+#media i {
+  font-size: 2em;
+}
+
+#media span {
+  display: block;
+  margin-top: 5px;
+}
+
+#media a:hover span {
+  color: var(--accent-1);
+}
+
+i#email {
+  color: #ea4335 !important;
+}
+
+i#linkedin {
+  color: #0a66c2;
+}
+i#github{
+  color:#713fc8;
+}
+#pdf {
+  width: 100%;
+  height: 1440px;
+}
+
+img {
+  max-width: 300px;
+}
+
+/* Estilos para pantallas más pequeñas (móviles) */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  #pdf {
+  width: 100%;
+  height: 500px;
+}
+
+  section {
+    width: 90%;
+  }
+
+  #motto h1,
+  #motto p {
+    width: 80%;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  #portfolio ul li {
+    width: 100%;
+  }
+}
