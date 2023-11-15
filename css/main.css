@@ -41,8 +41,8 @@ h4 {
   font-family: 'Roboto';
 }
 
-p b,
-p strong {
+b,
+strong {
   color: var(--accent-3);
 }
 p{
