@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function loadHomePage(homeData) {
         let nav = document.createElement('nav');
+        nav.id = "navbar";
         let contactSection = document.createElement('section');
         contactSection.id = homeData.contact.id;
         // Motto
@@ -219,4 +220,7 @@ function changeTabs(event,language) {
     }
     document.getElementById(language).style.display = "block";
     event.currentTarget.className += " active";
+
+    
 }
+

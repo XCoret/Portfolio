@@ -1,23 +1,28 @@
 :root {
   --text: #283D3B;
-  --accent-1: #008833;
-  --accent-2: #00AA40;
-  --accent-3: #009664;
+  --accent: #008833;
   --background: #ffffff;
   --cover-color: rgba(255, 255, 255, 0.75);
+  --email:#ea4335;
+  --linkedin:#0a66c2;
+  --github:#713fc8;
 }
 
-*::-moz-selection {
-  background-color: var(--accent-1)  ;
-  color:var(--background);
-  text-shadow: none;
-}
-*::selection { 
-background-color: var(--accent-1)  ;
-  color:var(--background);
-  text-shadow: none;
-}
 /***********************************************************************************************/
+/*Basics*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*::selection, 
+*::-moz-selection {
+  background-color: var(--accent);
+  color: var(--background);
+  text-shadow: none;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -28,12 +33,6 @@ body {
   font-family: 'Open Sans';
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 h1,
 h2,
 h3,
@@ -41,16 +40,16 @@ h4 {
   font-family: 'Roboto';
 }
 
-b,
-strong {
-  color: var(--accent-3);
-}
-p{
+p {
   text-align: justify;
 }
-a {
+a{
+  color: var(--accent);
+}
+p a {
   text-decoration: none;
-  color: var(--link);
+  font-style:italic;
+  padding:0px 15px;
 }
 
 section {
@@ -58,8 +57,70 @@ section {
   width: 75%;
   margin: 20px auto;
   padding: 35px;
-  border-bottom: solid 1px var(--accent-1);
+  border-top: solid 1px var(--accent);
 }
+img {
+  max-width: 300px;
+}
+
+button {
+  margin: 5px;
+  border: solid 3px var(--accent) !important;
+  background-color: var(--accent) !important;
+  color: var(--background);
+  font-size: 100%;
+  padding: 5px 10px !important;
+  cursor: pointer !important;
+}
+
+button:hover {
+  background-color: var(--background) !important;
+  color: var(--accent);
+  border-color: var(--background) !important;
+}
+
+button.active {
+  background-color: var(--background) !important;
+  color: var(--accent);
+  border-color: var(--accent) !important;
+}
+/***********************************************************************************************/
+/*NavBar*/
+#header {
+  background-color: var(--background);
+  box-shadow: 0px 0px 10px 1px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 1px var(--accent);
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text);
+  font-weight: bold;
+  font-family: 'Roboto';
+  width: 25%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar a:hover,
+#navbar a:active {
+  color: var(--accent);
+  background: linear-gradient(0deg, var(--accent) 10%, rgba(0, 0, 0, 0) 10%);
+}
+/***********************************************************************************************/
+/* Section motto*/
 
 #motto {
   margin-top: 0px;
@@ -81,45 +142,8 @@ section {
   font-style: italic;
   font-weight: bold;
 }
-
 /***********************************************************************************************/
-
-#header {
-  background-color: var(--background);
-  box-shadow: 0px 0px 10px 1px;
-  position: sticky;
-  top: 0px;
-  z-index: 1000;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: solid 1px var(--accent-1);
-}
-
-nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--text);
-  font-weight: bold;
-  font-family: 'Roboto';
-  width: 25%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav a:hover,
-nav a:active {
-  color: var(--accent-1);
-  background: linear-gradient(0deg, var(--accent-1) 10%, rgba(0, 0, 0, 0) 10%);
-}
-
-/***********************************************************************************************/
-/* ---- portfolio ---- */
+/* Section Portfolio*/
 #portfolio ul {
   display: flex;
   flex-wrap: wrap;
@@ -180,16 +204,23 @@ nav a:active {
 
 #portfolio ul li div h4 a {
   color: var(--text-color);
+  text-decoration: none;
+}
+#portfolio ul li div>h4 a i{
+  display:none;
 }
 
 #portfolio ul li div:hover>h4 a,
 #portfolio ul li div:hover>h4 a i {
-  color: var(--accent-1);
+  color: var(--accent);
+}
+#portfolio ul li div:hover>h4 a i{
+  display:inline-block;
 }
 
 #portfolio ul li:hover>div h4 {
   background-color: var(--background);
-  border-bottom: solid 1px var(--accent-1);
+  border-bottom: solid 1px var(--accent);
 }
 
 #portfolio ul li div h4 img {
@@ -204,37 +235,11 @@ nav a:active {
   padding: 0px 10px;
   text-shadow: 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   font-size: 90%;
-  color:var(--text);
-}
-
-/* ---- ---- */
-button {
-  margin: 5px;
-  border: solid 3px var(--accent-1) !important;
-  background-color: var(--accent-1) !important;
-  color: var(--background);
-  font-size: 100%;
-  padding: 5px 10px !important;
-  cursor: pointer !important;
-}
-
-button:hover {
-  background-color: var(--background) !important;
-  color: var(--accent-1);
-  border-color: var(--background) !important;
-}
-
-button.active {
-  background-color: var(--background) !important;
-  color: var(--accent-1);
-  border-color: var(--accent-1) !important;
+  color: var(--text);
 }
 
 /***********************************************************************************************/
-#contact {
-  text-align: center;
-}
-
+/* Section Contact */
 #media {
   list-style-type: none;
   display: flex;
@@ -261,40 +266,45 @@ button.active {
 }
 
 #media a:hover span {
-  color: var(--accent-1);
+  color: var(--accent);
 }
 
 i#email {
-  color: #ea4335 !important;
+  color: var(--email);
 }
 
 i#linkedin {
-  color: #0a66c2;
+  color: var(--linkedin);
 }
-i#github{
-  color:#713fc8;
+
+i#github {
+  color: var(--github);
 }
+
 #pdf {
   width: 100%;
   height: 1440px;
 }
-
-img {
-  max-width: 300px;
+/***********************************************************************************************/
+/* Responsive */
+@media only screen and (max-width: 900px) {
+    #pdf {
+    width: 100%;
+    height: 500px;
+  }
 }
-
-/* Estilos para pantallas más pequeñas (móviles) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   body {
     font-size: 14px;
   }
+
   #pdf {
-  width: 100%;
-  height: 500px;
-}
+    width: 100%;
+    height: 800px;
+  }
 
   section {
-    width: 90%;
+    width: 100%;
   }
 
   #motto h1,
@@ -307,6 +317,14 @@ img {
   }
 
   #portfolio ul li {
-    width: 100%;
+   margin: 5% auto;
   }
+}
+
+@media only screen and (max-width: 500px) {
+    #pdf {
+    width: 100%;
+    height: 500px;
+  }
+  
 }
