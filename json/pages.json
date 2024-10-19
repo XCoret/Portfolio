@@ -35,6 +35,14 @@
                                     "link": "#"
                                 },
                                 {
+                                    "title": "AI Master degree",
+                                    "description": "I graduated with a Master's degree in Artificial Intelligence from the University of La Rioja (UNIR)",
+                                    "cover": "ai_master.png",
+                                    "icon": "unir.png",
+                                    "alt": "UNIR - International University of La Rioja",
+                                    "link": "#"
+                                },
+                                {
                                     "title": "Python course degree",
                                     "description": "As part of my the Master's degree I sudied in UNIR, I also passed the studies corresponding to Python programming",
                                     "cover": "unir_python.png",

@@ -1,0 +1,163 @@
+/* General font settings for all elements */
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Background and margin for the body */
+body {
+    background: #f8f9fa;
+    margin: 0px;
+}
+
+/* General styling for all div elements */
+div {
+    border: solid 1px #dadce0;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+/* Bold text for span inside #header */
+#header span {
+    font-weight: bold;
+}
+
+/* Styling for textarea and #filename input */
+textarea,
+#filename {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #5f6368;
+    width: 95%;
+    min-width: 95%;
+    max-width: 95%;
+    display: block;
+    margin: 5px auto;
+    resize: none;
+    /* Disables resizing */
+    font-family: Arial, sans-serif;
+}
+
+/* Additional styling for #filename input */
+#filename {
+    padding: 10px;
+    width: 45%;
+    min-width: 45%;
+    max-width: 45%;
+    text-align: center;
+}
+
+/* Header styles with sticky positioning and padding */
+#header {
+    background-color: #f0f0f0;
+    padding: 5px;
+    text-align: center;
+    position: sticky;
+    /* Keeps the header fixed at the top */
+    top: 0;
+    margin-bottom: 5px;
+}
+
+/* Header title font size */
+#header h1 {
+    font-size: 24px;
+}
+
+/* Flexbox layout for the content */
+#content {
+    display: flex;
+    height: 100vh;
+    /* Full height of the viewport */
+    flex-direction: column;
+}
+
+/* Flex styling for the result section with auto overflow */
+#content #result {
+    flex: 3;
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    padding: 10px;
+}
+
+/* Padding and margin for markdown preview section */
+#markdown-preview {
+    padding: 10px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+/* Sticky editor section at the bottom */
+#content #editor {
+    flex: 1;
+    position: sticky;
+    bottom: 0;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+/* Button styling */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 45%;
+    float: right;
+}
+
+/* Control section styling */
+#controls {
+    background-color: transparent;
+    width: 50%;
+    margin: 0px auto;
+}
+
+/* Styling for inputs and buttons within #controls */
+#controls input,
+#controls button {
+    display: inline-block;
+    margin: 0px auto;
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 768px) {
+
+    /* Adjust markdown preview width and padding */
+    #markdown-preview {
+        margin: 0px auto;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    /* Center controls and make them full width */
+    #controls {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Make inputs and buttons full width and adjust margin */
+    #controls input,
+    #controls button {
+        width: 95%;
+        margin: 5px auto;
+        display: block;
+        float: none;
+        box-sizing: border-box;
+    }
+
+    /* Adjust #filename input styling for mobile */
+    #filename {
+        padding: 10px;
+        width: 95%;
+        max-width: 95%;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Make buttons full width for smaller screens */
+    button {
+        padding: 10px;
+        width: 95%;
+        box-sizing: border-box;
+    }
+}
