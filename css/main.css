@@ -143,6 +143,13 @@ nav a {
   font-weight: bold;
 }
 /***********************************************************************************************/
+/* Section About */
+#about img{
+  border-radius:50%;
+  display: block;
+  margin:0px auto;
+}
+/***********************************************************************************************/
 /* Section Portfolio*/
 #portfolio ul {
   display: flex;
